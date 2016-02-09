@@ -6,7 +6,7 @@ default: &default
 
 development:
   <<: *default
-  database: books_development
+  database: bookss_development
   username: clovescarneiro
   password:
 
@@ -15,7 +15,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: books_test
+  database: bookss_test
 
 production:
   <<: *default
