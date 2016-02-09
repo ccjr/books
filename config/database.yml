@@ -20,3 +20,6 @@ test:
 production:
   <<: *default
   database: books_production
+  host: <%= ENV["BOOKS_DB_HOST"] %>
+  username: <%= ENV["BOOKS_DB_USER"] %>
+  password: <%= ENV["BOOKS_DB_PASSWD"] %>
